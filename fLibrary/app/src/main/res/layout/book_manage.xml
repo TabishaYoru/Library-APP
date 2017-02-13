@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/book_manage"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.iii.library.LibSystem.BookManage"
+    tools:ignore = "ContentDescription">
+
+    <!--標題：書籍管理-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00D0E8"
+        android:gravity="center"
+        android:text="@string/book_manage"
+        android:textSize="30sp"
+        android:textColor="#000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+        <!--按鈕：還書功能-->
+        <Button android:id="@+id/return_btn"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:padding="3dp"
+            android:background="@drawable/radius"
+            android:text="@string/return_book"
+            android:textSize="20sp"/>
+
+        <!--按鈕：手動新增書籍-->
+        <Button android:id="@+id/new_btn"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:padding="3dp"
+            android:background="@drawable/radius"
+            android:text="@string/new_book"
+            android:textSize="20sp"/>
+
+        <!--按鈕：ISBN掃描-->
+        <Button android:id="@+id/isbn_btn"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:padding="3dp"
+            android:background="@drawable/radius"
+            android:text="@string/isbn_scan"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000"/>
+
+    <!--清單：所有書籍-->
+    <ListView android:id="@+id/list"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+</LinearLayout>

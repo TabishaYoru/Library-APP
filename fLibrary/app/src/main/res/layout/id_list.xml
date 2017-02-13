@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="3dp"
+    android:background="#FFFF9F"
+    android:descendantFocusability="blocksDescendants">
+
+    <!--資料：帳號-->
+    <TextView android:id="@+id/db_id"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:maxLines="1"
+        android:maxLength="12"/>
+    <!--資料：名字-->
+    <TextView android:id="@+id/db_name"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:maxLength="5"/>
+
+    <!--按鈕：刪除-->
+    <Button android:id="@+id/delete_btn"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/delete"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/radius_btn_red"/>
+
+    <!--按鈕：變更-->
+    <Button android:id="@+id/edit_btn"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/change"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/radius_btn"/>
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/book_manage_edit"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.iii.library.LibSystem.BookManageEdit"
+    tools:ignore = "ContentDescription">
+
+
+    <!--標題：書籍管理-編輯書籍-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00D0E8"
+        android:gravity="center"
+        android:text="@string/edit_book_title"
+        android:textSize="30sp"
+        android:textColor="#000"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <!--上傳圖片-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView android:id="@+id/image"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="3dp"
+                    android:onClick="onClick"
+                    android:src="@drawable/no_image"/>
+
+                <!--刪除圖片-->
+                <Button android:id="@+id/delete_btn"
+                    android:layout_weight=".15"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radius_btn_red"
+                    android:text="@string/x"
+                    android:textSize="25sp"
+                    android:textColor="#FFF"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <!--書名-->
+            <EditText android:id="@+id/book_name_text"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edt_bg"
+                android:hint="@string/book_name"
+                android:textSize="25sp"
+                android:inputType="text"
+                android:maxLines="1" />
+            <!--作者-->
+            <EditText android:id="@+id/author_text"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edt_bg"
+                android:hint="@string/author"
+                android:textSize="25sp"
+                android:maxLines="1"
+                android:inputType="text"/>
+            <!--ISBN-->
+            <EditText android:id="@+id/isbn_text"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edt_bg"
+                android:gravity="start|center"
+                android:hint="@string/book_isbn"
+                android:textSize="25sp"
+                android:maxLines="1"
+                android:maxLength="13"/>
+
+            <!--分類-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center"
+                    android:text="@string/book_class"
+                    android:textSize="25sp"
+                    android:textColor="#000" />
+
+                <Spinner android:id="@+id/spinner"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/cls"/>
+            </LinearLayout>
+
+            <!--按鈕：確定-->
+            <Button android:id="@+id/send_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/radius"
+                android:text="@string/submit"
+                android:textSize="20sp"/>
+
+            <!--錯誤訊息-->
+            <TextView android:id="@+id/error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

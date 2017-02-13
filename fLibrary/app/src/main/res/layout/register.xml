@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.iii.library.LibSystem.Register">
+
+    <!--圖書管理app Logo-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"/>
+
+    <!--標題：註冊-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00D0E8"
+        android:text="@string/register_title"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:maxLines="1" />
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+
+            <!--姓名欄位-->
+            <EditText android:id="@+id/rName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edt_bg"
+                android:inputType="textPersonName"
+                android:hint="@string/person"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:maxLength="5"/>
+
+            <!--輸入姓名錯誤訊息-->
+            <TextView android:id="@+id/errorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#FF0000"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+            <!--帳號欄位-->
+            <EditText android:id="@+id/rUser"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_bg"
+                android:hint="@string/account"
+                android:textSize="20sp"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:inputType="text"/>
+
+            <!--輸入帳號錯誤訊息-->
+            <TextView android:id="@+id/errorUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#FF0000"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+            <!--輸入密碼欄位-->
+            <EditText android:id="@+id/rPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edt_bg"
+                android:hint="@string/password"
+                android:textSize="20sp"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:maxLines="1"/>
+
+            <!--輸入密碼錯誤訊息-->
+            <TextView android:id="@+id/errorPw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#FF0000"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+            <!--確認密碼欄位-->
+            <EditText android:id="@+id/rCheckPw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edt_bg"
+                android:hint="@string/checkPw"
+                android:textSize="20sp"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:maxLines="1"/>
+            <!--確認密碼錯誤訊息-->
+            <TextView android:id="@+id/errCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#FF0000"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+            <!--輸入email欄位-->
+            <EditText android:id="@+id/rEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edt_bg"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email"
+                android:textSize="20sp"
+                android:maxLength="30"
+                android:maxLines="1"/>
+
+            <!--輸入電子信箱錯誤訊息-->
+            <TextView android:id="@+id/errorEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#FF0000"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+            <!--登入按鈕-->
+            <Button android:id="@+id/send_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radius"
+                android:text="@string/register_send"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

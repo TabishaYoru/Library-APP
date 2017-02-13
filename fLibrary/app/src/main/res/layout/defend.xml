@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.iii.library.LibSystem.Defend">
+
+    <!--圖書管理app Logo-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"/>
+
+    <!--標題：系統維護-->
+    <TextView android:id="@+id/news_txv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00D0E8"
+        android:text="@string/defend_title"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:gravity="center" />
+
+    <ListView android:id="@+id/defend_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

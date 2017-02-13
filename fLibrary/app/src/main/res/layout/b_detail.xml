@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/book_info"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:ignore = "ContentDescription"
+    tools:context="org.iii.library.Base.bDetail">
+
+    <!--圖書管理app Logo-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY" />
+
+    <!--標題：書籍資訊-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00D0E8"
+        android:text="@string/book_info"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:maxLines="1" />
+
+    <!--可滑動範圍-->
+    <ScrollView
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp">
+
+            <!--書籍-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp">
+
+                <!--圖片：書籍-->
+                <ImageView android:id="@+id/image"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/no_image"/>
+                <!--文字：書籍-->
+                <TextView android:id="@+id/book_name"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="2dp"
+                    android:gravity="start|center"
+                    android:background="@drawable/text_normal"
+                    android:textSize="30sp"
+                    android:maxLines="4"
+                    android:ellipsize="end"/>
+
+            </LinearLayout>
+
+            <!--作者-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp">
+
+                <!--文字-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/author"
+                    android:textSize="20sp"
+                    android:textColor="#000"/>
+                <!--資料-->
+                <TextView android:id="@+id/author"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="2dp"
+                    android:gravity="start|center"
+                    android:background="@drawable/text_normal"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+            </LinearLayout>
+
+            <!--ISBN-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp">
+
+                <!--文字-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/book_isbn"
+                    android:textSize="19sp"
+                    android:textColor="#000"/>
+                <!--資料-->
+                <TextView android:id="@+id/isbn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="2dp"
+                    android:gravity="start|center"
+                    android:background="@drawable/text_normal"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+            </LinearLayout>
+
+            <!--類別-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp">
+
+                <!--文字-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/sort"
+                    android:textSize="20sp"
+                    android:textColor="#000"/>
+                <!--資料-->
+                <TextView android:id="@+id/sort"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="2dp"
+                    android:gravity="start|center"
+                    android:background="@drawable/text_normal"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+            </LinearLayout>
+
+            <!--狀態-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp">
+
+                <!--文字-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/state"
+                    android:textSize="20sp"
+                    android:textColor="#000"/>
+                <!--資料-->
+                <TextView android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="2dp"
+                    android:gravity="start|center"
+                    android:background="@drawable/text_normal"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="50dp">
+        <!--按鈕：查看評論-->
+        <Button android:id="@+id/comment_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/radius"
+            android:layout_marginEnd="25dp"
+            android:text="@string/comment_check"
+            android:textSize="25sp"/>
+        <!--按鈕：借閱-->
+        <Button android:id="@+id/borrow_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius"
+            android:layout_marginStart="20dp"
+            android:text="@string/borrow"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <!--分隔線-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#05C"/>
+
+    <!--底部按鈕-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="3dp">
+        <!--分隔線(按鈕)-->
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="5dp" />
+        <!--首頁按鈕-->
+        <Button android:id="@+id/homeBtn"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_action_home" />
+        <!--分隔線(按鈕)-->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#08F" />
+        <!--首頁按鈕-->
+        <Button android:id="@+id/personalBtn"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_action_person" />
+        <!--分隔線(按鈕)-->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#08F" />
+        <!--查詢按鈕-->
+        <Button android:id="@+id/searchBtn"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_action_search"/>
+        <!--分隔線(按鈕)-->
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="1dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

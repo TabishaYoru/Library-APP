@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_manage_edit"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.iii.library.LibSystem.NewsManageEdit">
+
+
+    <!--圖書管理app Logo-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"/>
+
+    <!--標題：消息管理-修改最新消息-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00D0E8"
+        android:text="@string/news_edit_title"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:gravity="center" />
+
+    <!--輸入欄位：消息-->
+    <EditText android:id="@+id/edit_text"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edt_bg"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        android:maxLines="6" />
+
+    <!--錯誤訊息：不得超過100個字-->
+    <TextView android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:textColor="#F00"
+        android:visibility="gone"/>
+
+    <!--按鈕：確認上傳消息-->
+    <Button android:id="@+id/send_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="end"
+        android:text="@string/send"/>
+</LinearLayout>

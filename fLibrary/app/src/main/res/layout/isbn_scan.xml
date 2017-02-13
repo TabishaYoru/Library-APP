@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/isbn_scan"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.iii.library.LibSystem.IsbnScan">
+
+    <!--圖書管理app Logo-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"/>
+
+    <!--標題：書籍管理-isbn掃描-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00D0E8"
+        android:gravity="center"
+        android:text="@string/isbn_scan_title"
+        android:textSize="30sp"
+        android:textColor="#000"/>
+
+    <TextView android:id="@+id/isbn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_normal"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="#000"/>
+
+    <!--處理書籍動作-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="2dp"
+        android:padding="3dp">
+
+        <!--按鈕：新增書籍-->
+        <Button android:id="@+id/new_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius"
+            android:layout_gravity="center"
+            android:text="@string/book_new"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_weight=".5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--按鈕：新增書籍-->
+        <Button android:id="@+id/edit_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius"
+            android:layout_gravity="center"
+            android:text="@string/book_edit"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_weight=".5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--按鈕：新增書籍-->
+        <Button android:id="@+id/delete_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius"
+            android:layout_gravity="center"
+            android:text="@string/book_delete"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</LinearLayout>

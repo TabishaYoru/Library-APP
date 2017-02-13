@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="3dp"
+    android:layout_marginEnd="3dp"
+    android:background="#9FFFFF"
+    android:descendantFocusability="blocksDescendants">
+
+    <!--資料：書籍名稱-->
+    <TextView android:id="@+id/content"
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="25sp"
+        android:gravity="start"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+    <!--按鈕：變更-->
+    <Button android:id="@+id/edit_btn"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="2.5dp"
+        android:text="@string/change"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:background="@drawable/radius_btn"/>
+
+    <!--按鈕：刪除-->
+    <Button android:id="@+id/delete_btn"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="2.5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/delete"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/radius_btn_red"/>
+</LinearLayout>

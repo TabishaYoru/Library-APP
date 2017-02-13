@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.iii.library">
+
+    <!-- 存取網路權限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/la"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Base.Logo"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Base.News"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Base.Search"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Base.System"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LibSystem.Forget"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Base.nDetail"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Base.bDetail"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Base.Personal"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LibSystem.Register"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LibSystem.Edit"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LibSystem.Defend"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Base.History"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Base.Record"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LibSystem.IdManage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LibSystem.NewsManage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LibSystem.BookManage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LibSystem.BorrowList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LibSystem.BookStock"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Base.BookComment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Base.Main"
+            android:screenOrientation="portrait" />
+        <activity android:name=".LibSystem.BookReturn"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LibSystem.BookUpdate"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LibSystem.IsbnScan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LibSystem.NewsManageAdd"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Base.Login"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LibSystem.BorrowListDetail"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LibSystem.NewsManageEdit"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LibSystem.BookManageEdit"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Base.SearchResult"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Base.Discuss"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/book_return"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.iii.library.LibSystem.BookReturn">
+
+    <!--圖書管理app Logo-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"/>
+
+    <!--標題：書籍管理-還書功能-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00D0E8"
+        android:gravity="center"
+        android:text="@string/return_book_title"
+        android:textSize="30sp"
+        android:textColor="#000"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp">
+
+        <!--欄位：輸入還書人帳號-->
+        <EditText android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:gravity="center|start"
+            android:hint="@string/name"
+            android:textSize="25sp"
+            android:background="@drawable/edt_bg"
+            android:maxLines="1"
+            android:inputType="text"
+            android:maxEms="13"/>
+
+        <!--欄位：輸入isbn-->
+        <EditText android:id="@+id/isbn_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="3dp"
+            android:gravity="center|start"
+            android:hint="@string/isbn"
+            android:textSize="25sp"
+            android:background="@drawable/edt_bg"
+            android:maxLines="1"
+            android:inputType="text"
+            android:maxEms="13"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp">
+
+            <!--按鈕：歸還書籍-->
+            <Button android:id="@+id/send_btn"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="3dp"
+                android:background="@drawable/radius"
+                android:layout_gravity="center"
+                android:text="@string/submit_book"
+                android:textSize="20sp"/>
+
+            <!--按鈕：使用ISBN掃碼器-->
+            <Button android:id="@+id/isbn_btn"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="3dp"
+                android:background="@drawable/radius"
+                android:text="@string/isbn_scan"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

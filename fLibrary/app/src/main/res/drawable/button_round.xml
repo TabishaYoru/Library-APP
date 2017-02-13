@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!--color-->
+    <solid android:color="#FFF"/>
+
+    <!--正圓形-->
+    <size
+        android:height="100dp"
+        android:width="100dp"/>
+
+    <!--外框線條組細、顏色-->
+    <stroke
+        android:width="5dp"
+        android:color="#0FAFF0"/>
+
+</shape>

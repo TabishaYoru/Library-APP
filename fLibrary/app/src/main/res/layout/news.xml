@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.iii.library.Base.News">
+
+    <!--圖書管理app Logo-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"/>
+    <!--標題：最新消息-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00D0E8"
+        android:text="@string/news_title"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:maxLines="1" />
+
+    <!--最新消息連結-->
+    <ListView android:id="@+id/list"
+        android:layout_weight="2.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <!--分隔線-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#05C"/>
+
+    <!--書籍列-->
+    <GridView android:id="@+id/bookFrame"
+        android:layout_weight="2.5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:numColumns="auto_fit"/>
+
+    <!--分隔線-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#05C"/>
+
+    <!--底部按鈕-->
+    <LinearLayout
+        android:layout_weight="0.8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="3dp">
+        <!--分隔線(按鈕)-->
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="5dp" />
+        <!--首頁按鈕-->
+        <Button android:id="@+id/home_btn"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_action_home" />
+        <!--分隔線(按鈕)-->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#08F" />
+        <!--首頁按鈕-->
+        <Button android:id="@+id/personal_btn"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_action_person" />
+        <!--分隔線(按鈕)-->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#08F" />
+        <!--查詢按鈕-->
+        <Button android:id="@+id/search_btn"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_action_search"/>
+        <!--分隔線(按鈕)-->
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="1dp" />
+    </LinearLayout>
+</LinearLayout>

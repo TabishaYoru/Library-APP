@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/search_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore = "ContentDescription"
+    tools:context="org.iii.library.Base.SearchResult">
+
+    <!--圖書管理app Logo-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY" />
+
+    <!--標題：查詢結果-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00D0E8"
+        android:text="@string/searchResult"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:maxLines="1" />
+
+    <!--清單：圖書結果-->
+    <ListView android:id="@+id/list"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+</LinearLayout>

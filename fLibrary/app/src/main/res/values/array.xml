@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--查詢條件1-->
+    <array name="term">
+        <item>書名</item>
+        <item>ISBN條碼</item>
+    </array>
+
+    <!--查詢條件2
+    <array name="term_sub">
+        <item>資訊類</item>
+        <item>語文類</item>
+        <item>生活類</item>
+    </array>
+    -->
+
+    <!--書籍管理-->
+    <array name="work">
+        <item>新增</item>
+        <item>修改</item>
+        <item>刪除</item>
+    </array>
+
+
+    <!--書籍分類-->
+    <string-array name="cls">
+        <item>資訊類</item>
+        <item>語文類</item>
+        <item>生活類</item>
+    </string-array>
+
+</resources>

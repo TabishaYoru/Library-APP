@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/borrow_list_detail"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.iii.library.LibSystem.BorrowListDetail">
+
+    <!--圖書管理app Logo-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"/>
+
+    <!--標題：借出清單-個人-->
+    <TextView android:id="@+id/news_txv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00D0E8"
+        android:text="@string/borrow_self_title"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:gravity="center" />
+
+    <!--帳號-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_normal">
+
+        <TextView android:id="@+id/user_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/borrower"
+            android:textSize="25sp"
+            android:textColor="#000"/>
+
+        <TextView android:id="@+id/user_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/user_left"
+            android:textSize="25sp"
+            android:textColor="@color/blue"/>
+
+    </RelativeLayout>
+
+    <!--帳號-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_normal">
+
+        <TextView android:id="@+id/name_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/person"
+            android:textSize="25sp"
+            android:textColor="#000"/>
+
+        <!--文字：姓名-->
+        <TextView android:id="@+id/name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/name_left"
+            android:background="@drawable/text_normal"
+            android:textSize="25sp"
+            android:textColor="@color/blue"/>
+
+    </RelativeLayout>
+
+    <!--分隔線-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000"/>
+
+    <!--清單：借閱書籍-->
+    <ListView android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"/>
+
+</LinearLayout>

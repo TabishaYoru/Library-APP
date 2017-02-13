@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.iii.library.LibSystem.Edit">
+
+    <!--圖書管理app Logo-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"/>
+
+    <!--標題：修改密碼-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00D0E8"
+        android:text="@string/edit_title"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <!--帳號欄位-->
+        <EditText android:id="@+id/pass"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edt_bg"
+            android:hint="@string/oldPw"
+            android:textSize="25sp"
+            android:inputType="textPassword"
+            android:maxLength="12"/>
+
+        <!--舊密碼錯誤訊息-->
+        <TextView android:id="@+id/error_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textColor="#FF0000"
+            android:layout_gravity="center"/>
+
+        <!--新密碼欄位-->
+        <EditText android:id="@+id/new_pw"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edt_bg"
+            android:hint="@string/newPw"
+            android:textSize="25sp"
+            android:inputType="textPassword"
+            android:maxLength="12"/>
+
+        <!--新密碼錯誤訊息-->
+        <TextView android:id="@+id/error_new_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textColor="#FF0000"
+            android:layout_gravity="center"/>
+
+        <!--確認新密碼欄位-->
+        <EditText android:id="@+id/check"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edt_bg"
+            android:hint="@string/newCkPw"
+            android:textSize="25sp"
+            android:inputType="textPassword"
+            android:maxLength="12"/>
+
+        <!--確認新密碼錯誤訊息-->
+        <TextView android:id="@+id/error_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textColor="#FF0000"
+            android:layout_gravity="center"/>
+
+        <!--登入按鈕-->
+        <Button android:id="@+id/send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="3dp"
+            android:background="@drawable/radius"
+            android:text="@string/edit_send"
+            android:textSize="20sp"/>
+
+        <!--輸入錯誤訊息-->
+        <TextView android:id="@+id/error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="#F00"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
